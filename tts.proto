@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service TextToSpeechService {
+  // Service to convert text to speech
+  rpc ConvertTextFileToSpeech (TextFileRequest) returns (AudioFileResponse);
+}
+
+message TextFileRequest {
+  string json_content = 1; // JSON content as a string
+}
+
+message AudioFileResponse {
+  bytes audio = 1;         // Binary audio data
+}

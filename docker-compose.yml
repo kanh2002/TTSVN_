@@ -1,0 +1,19 @@
+
+services:
+  ttsvn:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "50056:50056"
+    volumes:
+      - .:/usr/src/app
+
+#  nginx:
+#    image: nginx:latest
+#    ports:
+#      - "80:80"
+#    volumes:
+#      - ./nginx.conf:/etc/nginx/nginx.conf
+#    depends_on:
+#      - ttsvn1
