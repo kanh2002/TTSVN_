@@ -31,3 +31,7 @@ linkmodel:https://drive.google.com/drive/folders/1Jr_kHl0Pe5K2oXSIg5gozMM4F8RHcR
 Start the gRPC server:
 ```sh
 python main.py
+
+### Running the gRPC Client
+```sh 
+python client.py
