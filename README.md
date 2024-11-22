@@ -18,7 +18,12 @@ linkmodel:https://drive.google.com/drive/folders/1Jr_kHl0Pe5K2oXSIg5gozMM4F8RHcR
     ```sh
     pip install -r requirements.txt
     ```
-
+3. Docker
+    ```sh
+    docker compose build 
+    docker run -it  ttsvn_ttsvn
+   or pull image from docker hubdocker:  docker pull  kanh164/ttsvn_ttsvn 
+    ```
 ## Usage
 
 ### Running the gRPC Server
